@@ -1,14 +1,14 @@
-'use strict'
-const switcher = document.querySelector('.btn');
-switcher.addEventListener('click', function () {
-    document.body.classList.toggle('dark-theme');
+'use strict'                                                // Força rigor a erros
+const switcher = document.querySelector('.btn');            // Conecta o HTML ao Java e prorura o elemento ".btn" e guarda a informação
+switcher.addEventListener('click', function () {            // Avisa o que fazer caso aconteça o "click"
+    document.body.classList.toggle('dark-theme');           // "toggle" funciona como interruptor
 
-    var className = document.body.className;
-    if(className == "light-theme") {
-        this.textContent = "Dark";
+    var className = document.body.className;                // Cria a váriavel
+    if(className == "light-theme") {                        // Se...
+        this.textContent = "Dark";                          // Faça...
     }
-    else {
+    else {                                                  // Senão... 
         this.textContent = "Light";
     }
-    console.log('current class name: ' + className);
+    console.log('current class name: ' + className);        // Faça...
 });
