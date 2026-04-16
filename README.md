@@ -1,2 +1,6 @@
 # Site simples
-Criação de site usando as lingagens HTML, HTML5, CSS, JAVA
+
+# Tecnologias utilizadas:
+HTML, HTML5, CSS, JAVA
+
+https://RASources.github.io/Site-Simples/
