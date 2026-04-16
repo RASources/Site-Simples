@@ -1,6 +1,8 @@
-# Site simples
+# Site Simples
 
-# Tecnologias utilizadas:
-HTML, HTML5, CSS, JAVA
+## Tecnologias utilizadas:
+HTML, CSS E JAVASCRIPT
+
+##  🌐  Acesse o projeto online:
 
 https://RASources.github.io/Site-Simples/
