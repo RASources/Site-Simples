@@ -1,42 +1,44 @@
-body        {font-family:    monospace;}
-body        {background: var(--bg);}
-ul          {font-family:    Arial, Helvetica, sans-serif;}
-li          {list-style:     circle;}
+body        {font-family:    monospace;}                    /* Fonte padrão monospace */
+body        {background: var(--bg);}                        /* Variável bg = backgroud */
+ul          {font-family:    Arial, Helvetica, sans-serif;} /* Fonte definida */
+li          {list-style:     circle;}                       /* Define circulos vázios */
 
-.list       {list-style:     square;}
-.btn:focus  {outline-style: none;}
+.list       {list-style:     square;}                       /* Define que serão quadrados */
+.btn:focus  {outline-style:groove;}                         /* Outline seria a linha de fora, "groove" é a borda com profundidade*/
+.btn:hover  {border-color: var(--orange);                   /* Borda fica laranja quando passa por cima */ 
+             cursor: pointer;}                              /* Cursor fica "mão" quando passa por cima */
 
-
-:root{  --green: #00FF00;
-        --white: #FFFFFF;
+:root{  --green: #00FF00;                                 /* Pote de tinta */
+        --white: #FFFFFF;                               
         --black: #000000;
         --red:   #ff0000;
-        --blue:  #0000FF;}
+        --blue:  #0000FF;
+        --yellow:#FFFF00;
+        --orange:#FF7700;
+}
 
 .light-theme {
-    --bg: var(--white);
-    --fontColor: var(--black);
-    --btnBg: var(--black);
-    --btnFontColor: var(--white);}
+    --bg: var(--white);                                     /* Cor de fundo */
+    --fontColor: var(--black);                              /* Cor da fonte do texto */  
+    --btnBg: var(--black);                                  /* Cor do botão */
+    --btnFontColor: var(--white);}                          /* Cor da fonte do botão */
 
 .dark-theme {
-    --bg: var(--black);
-    --fontColor: var(--white);
-    --btnBg: var(--white);
-    --btnFontColor: var(--black);}
+    --bg: var(--black);                                     /* Cor de fundo */
+    --fontColor: var(--white);                              /* Cor da fonte do texto */ 
+    --btnBg: var(--white);                                  /* Cor do botão */
+    --btnFontColor: var(--black);}                          /* Cor da fonte do botão */
 
-*{  color: var(--fontColor);
-    font-family: Arial, Helvetica, sans-serif;}
+*{  color: var(--fontColor);                                /* O asterisco seleciona todos os itens e a variavel e altera de acordo com a variável */
+    font-family: Arial, Helvetica, sans-serif;}             /* O asterisco seleciona todos os itens e a variavel e altera de acordo com a variável */
 
 .btn {
-    position: absolute;
-    top: 20px;
-    left: 350px;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    border: none;
-    color: var(--btnFontColor);
-    background-color: var(--btnBg);}    
-    
-/*COMENTÁRIO*/
+    position: absolute;                                     /* Determina a posição exata do botão de acordo com os proximos argumentos */
+    top: 20px;                                              /* Topo */
+    left: 350px;                                            /* Esquerda */
+    height: 50px;                                           /* Altura */
+    width: 50px;                                            /* Largura */
+    border-radius: 50%;                                     /* Transforma um quadrado em um circulo perfeito */ 
+    border: 2px solid var(--btnFontColor);                  /* Borda e cor da borda de acordo com variável*/
+    color: var(--btnFontColor);                             /* Cor da fonte do botão de acordo com variável*/
+    background-color: var(--btnBg);}                        /* Cor do botão de acordo com variável*/
